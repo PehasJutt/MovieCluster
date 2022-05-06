@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "/Views/Shared/_SignupLogin.cshtml";
+}
+@model User
+
+<div id="container1">
+    <div id="container2">
+        <div id="popup">
+            <h3 id="SignUp">Login</h3>
+            <form method="post" action="/Login/Login">
+                <input asp-for="username" placeholder="Username"/><br />
+                <input asp-for="password" placeholder="Password"/><br />
+                <input type="submit" value="Login" id="submit" /><br />
+                <a id="link" href="/SignUp/SignUp"><p>Click to Sign Up.</p></a>
+            </form>
+        </div>
+    </div>
+</div>
